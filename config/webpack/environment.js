@@ -10,6 +10,5 @@ environment.plugins.prepend('Provide',
   })
 )
 
-module.exports = environmentconst { environment } = require('@rails/webpacker')
 
 module.exports = environment
