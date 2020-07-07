@@ -3,3 +3,5 @@
   <%= @cocktail.name %>
 </p>
 <%= link_to 'Back', cocktails_path, class: "btn btn-primary" %>
+<%= render 'doses/index', doses: @cocktail.doses %>
+<%= link_to 'add a dose', new_cocktail_dose_path(@cocktail), class: "btn btn-primary" %>

@@ -2,9 +2,9 @@ class CocktailsController < ApplicationController
     before_action :set_cocktail, only: [:show, :edit, :update]
 
     def index
-      if params[:query].present?
-        @query = params[:query]
-        # @cocktails = Cocktail.where("{params[:query]}%'")
+      if params[:search].present?
+        @query = params[:search]
+        @cocktails = Cocktail.where("cocktails.name ILIKE ?", "%#{params[:search]}%")
       else
         @cocktails = Cocktail.all
       end

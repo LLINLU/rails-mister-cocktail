@@ -1,0 +1,27 @@
+$radius: 10px;
+$blue: #002C49;
+.home-banner {
+  background-image: asset-url('home-banner-bg.jpg');
+  background-size:contain;
+  height:90vh;
+  background-repeat: no-repeat;
+  padding-top: 25vh;
+
+  #banner-typed-text{
+    text-align: center;
+    position:fixed;
+    top:32vh;
+    left:40vh;
+    font-size:48px;
+  }
+
+  .typed-cursor {
+    display:none;
+  }
+  .typed-cusor-blink {
+    display:none;
+  }
+
+
+
+}

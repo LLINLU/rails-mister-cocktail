@@ -1,0 +1,8 @@
+<h1>ingredient</h1>
+<% doses.each do |dose| %>
+  <p><%= dose.description %></p>
+
+  <%= link_to 'delete dose', dose, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-primary" %>
+<% end %>
+
+

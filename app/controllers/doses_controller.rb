@@ -14,6 +14,10 @@ class DosesController < ApplicationController
     end
   end
 
+  def index
+    @doses = Dose.all
+  end
+
   def destroy
     @dose = Dose.find(params[:id])
     @dose.destroy

@@ -1,0 +1,13 @@
+<div class = "home-banner">
+  <h1 id='banner-typed-text'></h1>
+  <div class='search-bar'>
+<%= form_tag cocktails_path, :method => 'get' do %>
+  <p>
+    <%= text_field_tag :search, params[:search], placeholder: "Mojito" %>
+    <%= submit_tag "Find your like" %>
+  </p>
+<% end %>
+</div>
+
+</div>
+
